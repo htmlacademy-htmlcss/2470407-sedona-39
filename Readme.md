@@ -2,7 +2,7 @@
 
 * Студент: [Михаил Гребёнкин](https://up.htmlacademy.ru/htmlcss/39/user/2470407).
 * Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
-
+* Сайт: [Мой проект Седона](https://mitch0487.github.io/2470407-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
