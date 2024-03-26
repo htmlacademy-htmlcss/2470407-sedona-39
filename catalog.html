@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -46,37 +47,39 @@
 
     <main class="main-inner">
       <header class="inner-nav">
-        <h1 class="inner-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html" >Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="catalog.html" aria-current="page" >Гостиницы</a>
-          </li>
-        </ul>
+
       </header>
 
       <section class="hotels-filter">
+        <h1 class="hotels-filter white">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link white" href="index.html" >Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link white" href="catalog.html" aria-current="page" >Гостиницы</a>
+          </li>
+        </ul>
+
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура</legend>
+            <legend class="catalog-filter-title white">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="controls" for="pool">
+                <label class="controls white" for="pool">
                   <input class="control-input" type="checkbox" name="pool" id="pool">
             Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="controls" for="parking">
+                <label class="controls white" for="parking">
                   <input class="control-input" type="checkbox" name="parking" id="parking">
             Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="controls" for="wi-fi">
+                <label class="controls white" for="wi-fi">
                   <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi">
             Wi-Fi
                 </label>
@@ -85,22 +88,22 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья</legend>
+            <legend class="catalog-filter-title white">Тип жилья</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="controls" for="hotel">
+                <label class="controls white" for="hotel">
                   <input class="control-input" type="radio" name="hotel" id="hotel" checked>
             Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="controls" for="motel">
+                <label class="controls white" for="motel">
                   <input class="control-input" type="radio" name="hotel" id="motel">
             Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="controls" for="apart">
+                <label class="controls white" for="apart">
                   <input class="control-input" type="radio" name="hotel" id="apart">
             Апартаменты
                 </label>
@@ -108,14 +111,14 @@
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label class="catalog-filter-price-from" for="price-start">От</label>
+            <legend class="catalog-filter-title white">Стоимость, ₽:</legend>
+              <label class="catalog-filter-price-from white" for="price-start">От</label>
               <input type="number" id="price-start" name="start-price" placeholder="0"></input>
-              <label class="catalog-filter-price-from" for="price-stop">До</label>
+              <label class="catalog-filter-price-from white" for="price-stop">До</label>
               <input type="number" id="price-stop" name="stop-price" placeholder="9000"></input>
           </fieldset>
-          <button class="filter-button active-filter-button" type="submit">Применить</button>
-          <button class="filter-button" type="reset">Сбросить</button>
+          <button class="filter-button-enter active-filter-button white" type="submit">Применить</button>
+          <button class="filter-button-submit white" type="reset">Сбросить</button>
         </form>
       </section>
 
@@ -139,7 +142,7 @@
         <ul class="catalog-list">
             <li class="catalog-item">
               <a class="catalog-card-link" tabindex="-1" href="#">
-                <img class="catalog-card-img" src="images/hotel-1.jpg" width="300" height="212" alt="Гостиница 1">
+                <img class="catalog-card-img" src="images/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
                 <h3 class="catalog-title">Amara Resort & Spa</h3>
               </a>
               <p class="card-description">Гостиница</p>
@@ -152,7 +155,7 @@
 
             <li class="catalog-item">
               <a class="catalog-card-link" tabindex="-1" href="#">
-                <img class="catalog-card-img" src="images/hotel-2.jpg" width="300" height="212" alt="Гостиница 1">
+                <img class="catalog-card-img" src="images/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
                 <h3 class="catalog-title">Villas at Poco Diablo</h3>
               </a>
               <p class="card-description">Гостиница</p>
@@ -165,7 +168,7 @@
 
             <li class="catalog-item">
               <a class="catalog-card-link" tabindex="-1" href="#">
-                <img class="catalog-card-img" src="images/hotel-3.jpg" width="300" height="212" alt="Гостиница 1">
+                <img class="catalog-card-img" src="images/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
                 <h3 class="catalog-title">Desert Quail Inn</h3>
               </a>
               <p class="card-description">Гостиница</p>
@@ -178,7 +181,7 @@
 
             <li class="catalog-item">
               <a class="catalog-card-link" tabindex="-1" href="#">
-                <img class="catalog-card-img" src="images/hotel-4.jpg" width="300" height="212" alt="Гостиница 1">
+                <img class="catalog-card-img" src="images/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
                 <h3 class="catalog-title">GreenTree Inn</h3>
               </a>
               <p class="card-description">Гостиница</p>
