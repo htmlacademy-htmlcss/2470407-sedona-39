@@ -58,13 +58,6 @@ body {
     background-position: left top;
 }
 
-.hotels-filter {
-    background-image: url("../images/filter.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left top;
-}
-
 .subscribe-button {
     font-family: inherit;
     text-align: center;
@@ -143,19 +136,28 @@ body {
 
 .navigation {
     display: flex;
-    width: 1200;
+    width: 1200px;
+    height: 64px;
     margin: 0 auto;
 }
 
 .navigation-list {
     margin: 0;
-    padding: 100;
-    width: 500;
+    width: 339px;
+    height: 64px;
 }
 
 .navigation-user {
     max-width: 200px;
-    margin-left: auto;
+    margin-left: 285px;
+    margin-right: 30px;
+    width: 268px;
+    height: 64px;
+}
+
+.navigation-logo {
+    width: 140px;
+    margin-left: 70px;
 }
 
 .page-header-logo {
@@ -284,4 +286,72 @@ body {
     justify-content: space-between;
     width: 200px;
     height: 50px;
+}
+
+/*filters*/
+
+.hotels-filter {
+    margin: 0;
+    background-image: url("../images/filter.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 1200px;
+    height: 412px;
+}
+
+.catalog-filter-main {
+    margin: 0;
+    display: flex;
+    /*justify-content: space-between;*/
+}
+.filter-button-div {
+    margin: 0;
+    display: grid;
+    /*justify-content: space-between;*/
+    width: 191px;
+    height: 104px;
+    margin-right: 70px;
+}
+.hotels-filter-div {
+    margin: 0;
+    width: 1060px;
+    height: 307px;
+    margin-left: 70px;
+}
+
+/* catalog */
+.catalog-list-div  {
+    width: 1060px;
+    height: 896px;
+    margin-left: 70px;
+  }
+.catalog-item  {
+    width: 340px;
+    height: 438px;
+}
+.catalog-title {
+    display: grid;
+    text-align: center;
+    align-items: end;
+}
+.catalog-list-div {
+    display: flex;
+    justify-content: space-between;
+}
+.catalog-item-main-div {
+    display: flex;
+    justify-content: space-between;
+}
+/*pagination*/
+.pagination {
+    display: flex;
+    width: 1060px;
+    height: 60px;
+    margin-left: 70px;
+}
+.pagination-item {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
 }
